@@ -1,0 +1,28 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "NODE_PATH=./node_modules npx tsx main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@bufbuild/buf": "^1.66.0",
+    "@bufbuild/protobuf": "1.10.0",
+    "@bufbuild/protoc-gen-es": "^2.11.0",
+    "@connectrpc/connect": "1.6.1",
+    "@connectrpc/connect-node": "1.6.1",
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

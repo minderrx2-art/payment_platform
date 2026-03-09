@@ -1,0 +1,8 @@
+stack.md
+node_modules/
+
+/gen/
+payment-gateway/gen/
+payment-gateway/dist/
+
+.DS_Store

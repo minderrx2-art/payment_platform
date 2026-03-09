@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package payment.v1;
+
+import "buf/validate/validate.proto";
+
+service PaymentService {
+  rpc ProcessPayment(ProcessRequest) returns (ProcessResponse);
+}
+
+message ProcessRequest {
+  string user_id = 1;
+  int64 amount_cents = 2;
+  string idempotency_key = 3;
+}
+
+message ProcessResponse {
+  string payment_id = 1;
+  string status = 2;
+}
